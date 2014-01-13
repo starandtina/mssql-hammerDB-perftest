@@ -1,0 +1,23 @@
+{
+  "database": {
+    "host": "localhost",
+    "username": "sa",
+    "password": "password",
+    "data_path": "C:\\Program Files\\Microsoft SQL Server\\MSSQL11.MSSQLSERVER\\MSSQL",
+    "log_path": "E:\\mssql_data"
+  },
+  "tclsh86t": "C:\\Program Files\\HammerDB-2.15\\bin\\tclsh86t.exe",
+  "spec_dir": ".\\specs",
+  "mssql": {
+    "load_gen_script": ".\\deps\\mssql_load_gen.tcl"
+  },
+  "tpcc": {
+    "warehouses": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "load_threads": 8
+  }
+}

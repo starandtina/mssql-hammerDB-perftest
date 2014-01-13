@@ -1,0 +1,28 @@
+{
+  "name": "perftest.server",
+  "version": "0.0.0",
+  "description": "server of performance test",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "performance",
+    "test"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nconf": "~0.6.9",
+    "logan": "0.0.2",
+    "js-yaml": "~3.0.1",
+    "semver": "~2.2.1",
+    "underscore": "~1.5.2",
+    "xml2js": "~0.4.1",
+    "glob": "~3.2.8",
+    "co": "~3.0.2",
+    "thunkify": "0.0.1",
+    "co-exec": "~1.1.0"
+  }
+}
