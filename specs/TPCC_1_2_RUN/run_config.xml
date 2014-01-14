@@ -44,8 +44,8 @@
             <file_in>auto_tpcc.tcl</file_in>
             <script>timed</script> <!-- <script>standard</script> -->
             <exit_sql_error>no</exit_sql_error>
-            <ramp_min>3</ramp_min>
-            <test_min>10</test_min>
+            <ramp_min>0</ramp_min>
+            <test_min>1</test_min>
             <ms_delay>0</ms_delay>
             <ms_repeat>0</ms_repeat>
             <threads>64</threads>

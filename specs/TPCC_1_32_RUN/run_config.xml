@@ -14,7 +14,7 @@
             <ODBC_driver>SQL Server NATIVE CLIENT 11.0</ODBC_driver>
             <warehouses>1</warehouses>
             <load_threads>1</load_threads>
-            <run_threads>1</run_threads>
+            <run_threads>32</run_threads>
         </test_params>
         <sql_params>rdbms test warehouses database_name server port authentication server_ID server_pass uid ODBC_driver</sql_params>
     </config>
@@ -44,8 +44,8 @@
             <file_in>auto_tpcc.tcl</file_in>
             <script>timed</script> <!-- <script>standard</script> -->
             <exit_sql_error>no</exit_sql_error>
-            <ramp_min>3</ramp_min>
-            <test_min>10</test_min>
+            <ramp_min>1</ramp_min>
+            <test_min>3</test_min>
             <ms_delay>0</ms_delay>
             <ms_repeat>0</ms_repeat>
             <threads>64</threads>

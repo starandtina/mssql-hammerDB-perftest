@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<autohammer>
+	<time_start>2014-01-14T00:29:49.8</time_start>
+	<parsing>run_config.xml</parsing>
+	<XML-is>Well Formed</XML-is>
+	<get_configuration>
+		<authentication>sql</authentication>
+		<rdbms>MSSQL</rdbms>
+		<admin>NOT_USED</admin>
+		<load_threads>1</load_threads>
+		<main_db>db_main</main_db>
+		<sql_params>rdbms test warehouses database_name server port authentication server_ID server_pass uid ODBC_driver</sql_params>
+		<server_ID>sa</server_ID>
+		<port>1433</port>
+		<test_user>NOT_USED</test_user>
+		<test_pass>NOT_USED</test_pass>
+		<run_threads>2</run_threads>
+		<admin_pass>NOT_USED</admin_pass>
+		<server>(local)</server>
+		<test>TPCC</test>
+		<sysconnect>NOT_USED</sysconnect>
+		<uid>null</uid>
+		<connect>NOT_USED</connect>
+		<ODBC_driver>SQL Server NATIVE CLIENT 11.0</ODBC_driver>
+		<server_pass>password</server_pass>
+		<database_name>tpcc1</database_name>
+		<h_start>1</h_start>
+		<warehouses>1</warehouses>
+		<time_end>2014-01-14T00:29:49.8</time_end>
+	</get_configuration>
+	<connect_to_MSSQL>
+		<time_start>2014-01-14T00:29:49.8</time_start>
+		<params>
+			<rdbms>MSSQL</rdbms>
+			<test>TPCC</test>
+			<server>(local)</server>
+			<port>1433</port>
+			<authentication>sql</authentication>
+			<server_ID>sa</server_ID>
+			<server_pass>password</server_pass>
+			<database_name>tpcc1</database_name>
+			<ODBC_driver>SQL Server NATIVE CLIENT 11.0</ODBC_driver>
+		</params>
+		<MSSQL_connected>DRIVER=SQL Server NATIVE CLIENT 11.0;SERVER=(local);PORT=1433;UID=sa;PWD=password</MSSQL_connected>
+		<time_end>2014-01-14T00:29:49.8</time_end>
+	</connect_to_MSSQL>
+	<update_stats>
+		<time_start>2014-01-14T00:29:49.8</time_start>
+		<using>components/mssql_update_stats.sql</using>
+		<params>
+			<sql_sub>1</sql_sub>
+			<use_db>test</use_db>
+			<component>yes</component>
+			<database_name>tpcc1</database_name>
+			<trace_sql>no</trace_sql>
+		</params>
+		<SQL>Start Statement (1) Processing</SQL>
+		<MSSQLcommit></MSSQLcommit>
+		<time_end>2014-01-14T00:30:00.4</time_end>
+	</update_stats>
+	<disconnect_from_MSSQL>
+		<time_start>2014-01-14T00:30:00.4</time_start>
+		<time_end>2014-01-14T00:30:00.4</time_end>
+	</disconnect_from_MSSQL>
+	<connect_to_MSSQL>
+		<time_start>2014-01-14T00:30:00.4</time_start>
+		<params>
+			<rdbms>MSSQL</rdbms>
+			<test>TPCC</test>
+			<server>(local)</server>
+			<port>1433</port>
+			<authentication>sql</authentication>
+			<server_ID>sa</server_ID>
+			<server_pass>password</server_pass>
+			<database_name>tpcc1</database_name>
+			<ODBC_driver>SQL Server NATIVE CLIENT 11.0</ODBC_driver>
+		</params>
+		<MSSQL_connected>DRIVER=SQL Server NATIVE CLIENT 11.0;SERVER=(local);PORT=1433;UID=sa;PWD=password</MSSQL_connected>
+		<time_end>2014-01-14T00:30:00.5</time_end>
+	</connect_to_MSSQL>
+	<run_tpcc>
+		<time_start>2014-01-14T00:30:00.5</time_start>
+		<call_is>Run_tpcc log_id log_dir connect sysconnect rdbms database_name run_threads ramp_min test_min key_and_think exit_sql_error</call_is>
+		<using>components/auto_tpcc.tcl</using>
+		<params>
+			<log_id>file2858e50</log_id>
+			<log_dir>TPCC_MSSQL_2014_01_14h00m29s47_1194</log_dir>
+			<connect>DRIVER=SQL Server NATIVE CLIENT 11.0;SERVER=(local);PORT=1433;UID=sa;PWD=password</connect>
+			<sysconnect>NOT_USED</sysconnect>
+			<rdbms>MSSQL</rdbms>
+			<database_name>tpcc1</database_name>
+			<run_threads>2</run_threads>
+			<ramp_min>0</ramp_min>
+			<test_min>1</test_min>
+			<key_and_think>0</key_and_think>
+			<exit_sql_error>no</exit_sql_error>
+		</params>
+		<running_threads>
+			<time_start>2014-01-14T00:30:00.5</time_start>
+			<creating_users>
+				<time_start>2014-01-14T00:30:00.5</time_start>
+				<thread_log>TPCC_MSSQL_2014_01_14h00m29s47_1194/run_tpcc/tlog_00001.xml</thread_log>
+				<user>Using warehouse 1 and stock level 5</user>
+				<thread_log>TPCC_MSSQL_2014_01_14h00m29s47_1194/run_tpcc/tlog_00002.xml</thread_log>
+				<user>Using warehouse 1 and stock level 2</user>
+				<time_end>2014-01-14T00:30:00.7</time_end>
+			</creating_users>
+			<begin_rampup>For 0 minutes starting at 2014-01-14T00:30:00.7</begin_rampup>
+			<rampup_complete>2014-01-14T00:30:00.7</rampup_complete>
+			<test_running>Run for 1 minutes</test_running>
+				<test_time>1 minutes complete notmp     2732.677 ...</test_time>
