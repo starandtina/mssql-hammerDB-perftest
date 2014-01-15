@@ -844,7 +844,7 @@ proc Run_tpcc { log_id base_log_dir connect sysconnect rdbms database_name threa
 	set ONE_MIN   60000
 	set xlevel 2
 
-puts "starting run_tpcc"
+	puts "Run_tpcc started"
 
 	set thread_dir [file join $base_log_dir $sec_name]
 	file mkdir $thread_dir
@@ -932,13 +932,13 @@ puts "starting run_tpcc"
 
 
 	tsv::incr auto_ctl_var exit_trans 
-	
 
 	after 500
 	while {[llength [thread::names]] > 1} {
-		puts "while loop..."
 		after 500
 	}
+
+	puts "Run_tpcc finished, start to collect results"
 
 	set end_total_ms [ clock milliseconds ]
 	set end_trans [All_queries $rdbms  $log_id $sec_name $hodbc $dbcur $syscur $dbhandle $syshandle $xlevel]

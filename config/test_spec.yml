@@ -5,4 +5,5 @@ job:
     version: 0.0.1
     concurrent: false
     specs:
+        - TPCC_1_1_RUN
         - TPCC_1_2_RUN

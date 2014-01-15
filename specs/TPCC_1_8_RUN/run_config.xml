@@ -48,7 +48,6 @@
             <test_min>3</test_min>
             <ms_delay>0</ms_delay>
             <ms_repeat>0</ms_repeat>
-            <threads>64</threads>
             <key_and_think>0</key_and_think>
         </test_params>
         <call>Run_tpcc log_id log_dir connect sysconnect rdbms database_name run_threads ramp_min test_min key_and_think exit_sql_error</call>

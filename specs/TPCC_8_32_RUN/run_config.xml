@@ -3,7 +3,7 @@
     <config>
         <rdbms>MSSQL</rdbms>
         <test>TPCC</test>
-        <database_name>tpcc1</database_name>
+        <database_name>tpcc8_1</database_name>
         <test_params>
             <server>(local)</server>
             <port>1433</port> 
@@ -12,40 +12,22 @@
             <server_pass>password</server_pass>
             <uid>null</uid>
             <ODBC_driver>SQL Server NATIVE CLIENT 11.0</ODBC_driver>
-            <warehouses>1</warehouses>
-            <load_threads>1</load_threads>
-            <run_threads>16</run_threads>
+            <warehouses>8</warehouses>
+            <run_threads>32</run_threads>
         </test_params>
         <sql_params>rdbms test warehouses database_name server port authentication server_ID server_pass uid ODBC_driver</sql_params>
     </config>
-        <!-- will do the connect db -->
     <connect></connect>
-    <run_sql>
-        <sec_name>update_stats</sec_name>
-        <step>Update the statistics</step>
-        <component>yes</component>
-        <test_params>
-            <trace_sql>no</trace_sql>
-            <use_db>test</use_db>
-            <sql_sub>1</sql_sub>
-            <file_in>mssql_update_stats.sql</file_in>
-        </test_params>
-        <sql_params>sql_sub use_db component database_name trace_sql</sql_params>
-    </run_sql>
-    <!-- Just to keep it clean after the backup disconnect and then connect -->
-    <disconnect></disconnect>
-    <connect></connect>
-    <!-- Now run the test --> 
     <run_tcl>
         <sec_name>run_tpcc</sec_name>
         <step>Run the tpcc</step>
         <component>yes</component>
         <test_params>
             <file_in>auto_tpcc.tcl</file_in>
-            <script>timed</script> <!-- <script>standard</script> -->
+            <script>timed</script>
             <exit_sql_error>no</exit_sql_error>
-            <ramp_min>1</ramp_min>
-            <test_min>3</test_min>
+            <ramp_min>0</ramp_min>
+            <test_min>1</test_min>
             <ms_delay>0</ms_delay>
             <ms_repeat>0</ms_repeat>
             <key_and_think>0</key_and_think>

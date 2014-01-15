@@ -1,7 +1,0 @@
-connect target /
-shutdown immediate;
-startup force dba;
-shutdown immediate;
-startup mount;
-backup tablespace users format '/tmp/tpcc_w05_%d_%s_%p';
-alter database open;
