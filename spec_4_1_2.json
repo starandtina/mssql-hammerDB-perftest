@@ -1,0 +1,30 @@
+{
+    "TPCC_tpcc1_3_2": {
+        "tpm": 2419436,
+        "tpmC": 9014.423,
+        "vUsers": 2,
+        "dbName": "tpcc1_3"
+    },
+    "TPCC_tpcc1_2_2": {
+        "tpm": 2419748,
+        "tpmC": 9462.158,
+        "vUsers": 2,
+        "dbName": "tpcc1_2"
+    },
+    "TPCC_tpcc1_4_2": {
+        "tpm": 2419473,
+        "tpmC": 9101.473,
+        "vUsers": 2,
+        "dbName": "tpcc1_4"
+    },
+    "TPCC_tpcc1_1_2": {
+        "tpm": 2419437,
+        "tpmC": 9353.649,
+        "vUsers": 2,
+        "dbName": "tpcc1_1"
+    },
+    "averageTPM": 2419523.5,
+    "averageTPMC": 9232.925749999999,
+    "successNum": 4,
+    "failNum": 0
+}

@@ -1,0 +1,17 @@
+{
+    "concurrentDB": 2,
+    "TPCC_tpcc1_2_2": {
+        "tpm": 1408453,
+        "tpmC": 11024.952,
+        "vUsers": 2,
+        "dbName": "tpcc1_2"
+    },
+    "TPCC_tpcc1_1_2": {
+        "tpm": 1408559,
+        "tpmC": 10439.117,
+        "vUsers": 2,
+        "dbName": "tpcc1_1"
+    },
+    "averageTPM": 1408506,
+    "averageTPMC": 10732.0345
+}

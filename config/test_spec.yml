@@ -3,7 +3,21 @@ job:
     name: mssql-tpcc
     description: Loading test for MSSQL Server with TPCC
     version: 0.0.1
-    concurrent: false
+    concurrent: yes
     specs:
-        - TPCC_1_1_RUN
-        - TPCC_1_2_RUN
+        - TPCC_1_1_2_RUN
+        - TPCC_1_2_2_RUN
+        - TPCC_1_3_2_RUN
+        - TPCC_1_4_2_RUN
+        - TPCC_1_5_2_RUN
+        - TPCC_1_6_2_RUN
+        - TPCC_1_7_2_RUN
+        - TPCC_1_8_2_RUN
+        - TPCC_1_9_2_RUN
+        - TPCC_1_10_2_RUN
+        - TPCC_1_11_2_RUN
+        - TPCC_1_12_2_RUN
+        - TPCC_1_13_2_RUN
+        - TPCC_1_14_2_RUN
+        - TPCC_1_15_2_RUN
+        - TPCC_1_16_2_RUN

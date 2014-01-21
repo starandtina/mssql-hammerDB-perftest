@@ -1,0 +1,12 @@
+{
+    "TPCC_tpcc1_1_2": {
+        "tpm": 690537,
+        "tpmC": 10500.914,
+        "vUsers": 2,
+        "dbName": "tpcc1_1"
+    },
+    "averageTPM": 690537,
+    "averageTPMC": 10500.914,
+    "successNum": 1,
+    "failNum": 0
+}

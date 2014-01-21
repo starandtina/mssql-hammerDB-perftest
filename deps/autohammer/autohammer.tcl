@@ -601,7 +601,7 @@ proc RandomNumber {m M} {return [expr {int($m+rand()*($M+1-$m))}]}
 
 proc Create_log_dir {} {
 global rdbms_info f_info xml_info 
-	set ranz [ RandomNumber 0 9999 ]
+	set ranz [ RandomNumber 0 99999999999 ]
 	set clock_string [clock format [clock seconds] -format "%Y_%m_%dh%Hm%Ms%S"]
 	set log_file [format "%s_%s_%s_%s" $rdbms_info(test) $rdbms_info(rdbms) $clock_string $ranz]
 	set f_info(log_dir) [file join $f_info(log_loc) $log_file]
